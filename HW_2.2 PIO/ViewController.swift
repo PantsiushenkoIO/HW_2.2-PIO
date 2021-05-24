@@ -73,16 +73,16 @@ blueSlider.maximumValue = 1
     
     @IBAction func redSliderChanged(_ sender: Any) {
         changedColor()
-        redLabel.text = "\(round(redSlider.value))"
+        redLabel.text = String(format: "%.2f", redSlider.value)
     }
     
     @IBAction func greenSliderChanged(_ sender: Any) {
         changedColor()
-        greenLabel.text = "\(round(greenSlider.value))"
+        greenLabel.text = String(format: "%.2f", greenSlider.value)
     }
     
     @IBAction func blueSliderChanged(_ sender: Any) {
         changedColor()
-        blueLabel.text = "\(round(blueSlider.value))"
+        blueLabel.text = String(format: "%.2f", blueSlider.value)
     }
 }
